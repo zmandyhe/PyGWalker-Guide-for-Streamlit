@@ -1,1 +1,690 @@
-[{"visId":"gw_iFm7","name":"Chart 1","encodings":{"dimensions":[{"dragId":"gw_U0Xt","fid":"c2V4XzM=","name":"sex","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_GReh","fid":"c21va2VyXzQ=","name":"smoker","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_oWn6","fid":"ZGF5XzU=","name":"day","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_QWKc","fid":"dGltZV82","name":"time","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_cGnk","fid":"c2l6ZV83","name":"size","semanticType":"ordinal","analyticType":"dimension"}],"measures":[{"dragId":"gw_0Mzi","fid":"aW5kZXhfMA==","name":"index","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_Fxn8","fid":"dG90YWxfYmlsbF8x","name":"total_bill","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_DTa5","fid":"dGlwXzI=","name":"tip","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_count_fid","fid":"gw_count_fid","name":"Row count","analyticType":"measure","semanticType":"quantitative","aggName":"sum","computed":true,"expression":{"op":"one","params":[],"as":"gw_count_fid"}}],"rows":[{"dragId":"gw_Qo-0","fid":"dG90YWxfYmlsbF8x","name":"total_bill","analyticType":"measure","semanticType":"quantitative","aggName":"sum"}],"columns":[{"dragId":"gw_3Wlk","fid":"c21va2VyXzQ=","name":"smoker","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_rd8l","fid":"ZGF5XzU=","name":"day","semanticType":"nominal","analyticType":"dimension"}],"color":[{"dragId":"gw_O6ds","fid":"dGltZV82","name":"time","semanticType":"nominal","analyticType":"dimension"}],"opacity":[],"size":[],"shape":[],"radius":[],"theta":[],"details":[],"filters":[],"text":[]},"config":{"defaultAggregated":true,"geoms":["auto"],"stack":"stack","showActions":false,"interactiveScale":false,"sorted":"none","size":{"mode":"auto","width":477,"height":310},"format":{}}},{"visId":"gw_x7bj","name":"Chart 2","encodings":{"dimensions":[{"dragId":"gw_LAx6","fid":"c2V4XzM=","name":"sex","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_t9uO","fid":"c21va2VyXzQ=","name":"smoker","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_aiMI","fid":"ZGF5XzU=","name":"day","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_STnO","fid":"dGltZV82","name":"time","semanticType":"nominal","analyticType":"dimension"},{"dragId":"gw_GET0","fid":"c2l6ZV83","name":"size","semanticType":"ordinal","analyticType":"dimension"}],"measures":[{"dragId":"gw_NVwf","fid":"aW5kZXhfMA==","name":"index","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_aR_C","fid":"dG90YWxfYmlsbF8x","name":"total_bill","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_xzGJ","fid":"dGlwXzI=","name":"tip","analyticType":"measure","semanticType":"quantitative","aggName":"sum"},{"dragId":"gw_count_fid","fid":"gw_count_fid","name":"Row count","analyticType":"measure","semanticType":"quantitative","aggName":"sum","computed":true,"expression":{"op":"one","params":[],"as":"gw_count_fid"}}],"rows":[{"dragId":"gw_srjH","fid":"dGlwXzI=","name":"tip","analyticType":"measure","semanticType":"quantitative","aggName":"sum"}],"columns":[{"dragId":"gw_d5R0","fid":"c2V4XzM=","name":"sex","semanticType":"nominal","analyticType":"dimension"}],"color":[],"opacity":[],"size":[],"shape":[],"radius":[],"theta":[],"details":[],"filters":[],"text":[]},"config":{"defaultAggregated":true,"geoms":["auto"],"stack":"stack","showActions":false,"interactiveScale":false,"sorted":"none","size":{"mode":"auto","width":320,"height":200},"format":{}}}]
+[
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "bar"
+      ],
+      "coordSystem": "generic",
+      "limit": 100,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "LDL (Bad Cholesterol) (mg/dL)",
+          "name": "LDL (Bad Cholesterol) (mg/dL)",
+          "basename": "LDL (Bad Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "HDL (Good Cholesterol) (mg/dL)",
+          "name": "HDL (Good Cholesterol) (mg/dL)",
+          "basename": "HDL (Good Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Triglycerides (mg/dL)",
+          "name": "Triglycerides (mg/dL)",
+          "basename": "Triglycerides (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              195,
+              275
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "fixed",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "scaleIncludeUnmatchedChoropleth": false,
+      "showAllGeoshapeInChoropleth": false,
+      "colorPalette": "",
+      "useSvg": false,
+      "scale": {
+        "opacity": {},
+        "size": {}
+      },
+      "primaryColor": "rgba(6,147,227,1)"
+    },
+    "visId": "gw_TCbc",
+    "name": "Chart 1"
+  },
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "bar"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "LDL (Bad Cholesterol) (mg/dL)",
+          "name": "LDL (Bad Cholesterol) (mg/dL)",
+          "basename": "LDL (Bad Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "HDL (Good Cholesterol) (mg/dL)",
+          "name": "HDL (Good Cholesterol) (mg/dL)",
+          "basename": "HDL (Good Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Triglycerides (mg/dL)",
+          "name": "Triglycerides (mg/dL)",
+          "basename": "Triglycerides (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "LDL (Bad Cholesterol) (mg/dL)",
+          "name": "LDL (Bad Cholesterol) (mg/dL)",
+          "basename": "LDL (Bad Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              50,
+              66
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "scaleIncludeUnmatchedChoropleth": false,
+      "showAllGeoshapeInChoropleth": false,
+      "colorPalette": "",
+      "useSvg": false,
+      "scale": {
+        "opacity": {},
+        "size": {}
+      },
+      "primaryColor": "rgba(255,0,62,1)"
+    },
+    "visId": "gw_3FNy",
+    "name": "Chart 2"
+  },
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "bar"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "LDL (Bad Cholesterol) (mg/dL)",
+          "name": "LDL (Bad Cholesterol) (mg/dL)",
+          "basename": "LDL (Bad Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "HDL (Good Cholesterol) (mg/dL)",
+          "name": "HDL (Good Cholesterol) (mg/dL)",
+          "basename": "HDL (Good Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Triglycerides (mg/dL)",
+          "name": "Triglycerides (mg/dL)",
+          "basename": "Triglycerides (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "HDL (Good Cholesterol) (mg/dL)",
+          "name": "HDL (Good Cholesterol) (mg/dL)",
+          "basename": "HDL (Good Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              50,
+              66
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "scaleIncludeUnmatchedChoropleth": false,
+      "showAllGeoshapeInChoropleth": false,
+      "colorPalette": "",
+      "useSvg": false,
+      "scale": {
+        "opacity": {},
+        "size": {}
+      },
+      "primaryColor": "rgba(0,208,132,1)"
+    },
+    "visId": "gw_aGG4",
+    "name": "Chart 3"
+  },
+  {
+    "config": {
+      "defaultAggregated": false,
+      "geoms": [
+        "line"
+      ],
+      "coordSystem": "generic",
+      "limit": -1,
+      "timezoneDisplayOffset": 0
+    },
+    "encodings": {
+      "dimensions": [
+        {
+          "fid": "gw_mea_key_fid",
+          "name": "Measure names",
+          "analyticType": "dimension",
+          "semanticType": "nominal"
+        }
+      ],
+      "measures": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Total Cholesterol (mg/dL)",
+          "name": "Total Cholesterol (mg/dL)",
+          "basename": "Total Cholesterol (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "LDL (Bad Cholesterol) (mg/dL)",
+          "name": "LDL (Bad Cholesterol) (mg/dL)",
+          "basename": "LDL (Bad Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "HDL (Good Cholesterol) (mg/dL)",
+          "name": "HDL (Good Cholesterol) (mg/dL)",
+          "basename": "HDL (Good Cholesterol) (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "Triglycerides (mg/dL)",
+          "name": "Triglycerides (mg/dL)",
+          "basename": "Triglycerides (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        },
+        {
+          "fid": "gw_count_fid",
+          "name": "Row count",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "computed": true,
+          "expression": {
+            "op": "one",
+            "params": [],
+            "as": "gw_count_fid"
+          }
+        },
+        {
+          "fid": "gw_mea_val_fid",
+          "name": "Measure values",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum"
+        }
+      ],
+      "rows": [
+        {
+          "fid": "Triglycerides (mg/dL)",
+          "name": "Triglycerides (mg/dL)",
+          "basename": "Triglycerides (mg/dL)",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "columns": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0
+        }
+      ],
+      "color": [],
+      "opacity": [],
+      "size": [],
+      "shape": [],
+      "radius": [],
+      "theta": [],
+      "longitude": [],
+      "latitude": [],
+      "geoId": [],
+      "details": [],
+      "filters": [
+        {
+          "fid": "Age",
+          "name": "Age",
+          "basename": "Age",
+          "analyticType": "measure",
+          "semanticType": "quantitative",
+          "aggName": "sum",
+          "offset": 0,
+          "rule": {
+            "type": "range",
+            "value": [
+              50,
+              66
+            ]
+          }
+        }
+      ],
+      "text": []
+    },
+    "layout": {
+      "showActions": false,
+      "showTableSummary": false,
+      "stack": "stack",
+      "interactiveScale": false,
+      "zeroScale": true,
+      "size": {
+        "mode": "auto",
+        "width": 320,
+        "height": 200
+      },
+      "format": {},
+      "geoKey": "name",
+      "resolve": {
+        "x": false,
+        "y": false,
+        "color": false,
+        "opacity": false,
+        "shape": false,
+        "size": false
+      },
+      "scaleIncludeUnmatchedChoropleth": false,
+      "showAllGeoshapeInChoropleth": false,
+      "colorPalette": "",
+      "useSvg": false,
+      "scale": {
+        "opacity": {},
+        "size": {}
+      },
+      "primaryColor": "rgba(171,184,195,1)"
+    },
+    "visId": "gw_hAb5",
+    "name": "Chart 5"
+  }
+]
